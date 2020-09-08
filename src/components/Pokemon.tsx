@@ -23,7 +23,12 @@ export default function Pokemon({
       <p>Terrifying: {terrifying ? 'Very' : 'nah, lovable'}</p>
       <p>What about null? {null}</p>
       <p>And undefined? {undefined}</p>
-      <p>Abilities: {abilities}</p>
+      <p>Abilities ({abilities.length}) : </p>
+      <ul>
+        {abilities.map((ability) => {
+          return <li>{ability}</li>;
+        })}
+      </ul>
     </div>
   );
 }
