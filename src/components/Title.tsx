@@ -1,5 +1,9 @@
 import React from 'react';
 
-export default function Title() {
-  return <h1>React Title component</h1>;
+type Props = {
+  content: string;
+};
+
+export default function Title({ content }: Props) {
+  return <h1>{content}</h1>;
 }
